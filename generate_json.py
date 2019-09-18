@@ -45,7 +45,7 @@ if __name__ == "__main__":
     try:
         df = pd.read_csv(name + ".csv")
     except:
-        print("Wrong sample set selected, please use --sample with correct dataset")
+        print("Data file doesn't exist\n1- make sure to use the correct corpus name\n2- run generate_dataset.py first")
         exit(1)
     df = clean(df)
     df.to_csv(name +  "_cleaned.csv", index=False)

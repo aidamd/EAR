@@ -7,7 +7,7 @@ def calm():
     data = {"user": list(),
             "line": list(),
             "text": list()}
-    for file in glob.glob("Data_For_Morality_Project/Sample_1_CALM/"
+    for file in glob.glob("Raw-Data/Sample_1_CALM/"
                         "Transcripts/Transcripts_PrePostCombined_CreatedByAllisonTackman/"
                         "*.docx"):
         doc = docx.Document(file)
@@ -22,7 +22,7 @@ def breast_cancer():
     data = {"user": list(),
             "line": list(),
             "text": list()}
-    for file in glob.glob("Data_For_Morality_Project/Sample_2_Breast Cancer/Transcripts/"
+    for file in glob.glob("Raw-Data/Sample_2_Breast Cancer/Transcripts/"
                           "*.txt"):
         doc = open(file, "rb").readlines()
         user = file.split("/")[-1][:-8]
@@ -40,7 +40,7 @@ def dse():
     data = {"user": list(),
             "line": list(),
             "text": list()}
-    for file in glob.glob("Data_For_Morality_Project/Sample_3_DSE/"
+    for file in glob.glob("Raw-Data/Sample_3_DSE/"
                         "Transcripts/ALL Visits combined/"
                         "*.docx"):
         doc = docx.Document(file)
@@ -55,7 +55,7 @@ def aging():
     data = {"user": list(),
             "line": list(),
             "text": list()}
-    for file in glob.glob("Data_For_Morality_Project/Sample_4_Aging/"
+    for file in glob.glob("Raw-Data/Sample_4_Aging/"
                           "Transcripts/"
                           "*.docx"):
         doc = docx.Document(file)
